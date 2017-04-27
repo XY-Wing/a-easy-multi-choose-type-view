@@ -1,7 +1,7 @@
 # a-easy-multi-choose-type-view
 - 喜欢的话就赏个小星星吧😊
 - 使用方式
----
+--- 
     NSArray *arr = @[@"上班打卡",@"下班打卡",@"白班打卡",@"晚班打卡"];
     //1.初始化
     XYChooseTypeAlertView *alertV = [[XYChooseTypeAlertView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) withTitleArray:arr];
@@ -9,13 +9,16 @@
     alertV.delegate = self;
     //3.显示
     [alertV showChooseTypeView];
-
-\- (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
+---
+<br>
+--- 
+>- (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
 {
     //选择后调用
     NSLog(@"index = %zd",index);
 }
-\-  (void)chooseTypeAlertViewWillDisappear:(XYChooseTypeAlertView *)alertView
+<br>
+>-  (void)chooseTypeAlertViewWillDisappear:(XYChooseTypeAlertView *)alertView
 {
     NSLog(@"消失调用");
 }
