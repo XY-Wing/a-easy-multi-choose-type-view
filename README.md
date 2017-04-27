@@ -12,12 +12,12 @@
 ---
 - delegate
 ---
-- (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
+ (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
 {
     //选择后调用
     NSLog(@"index = %zd",index);
 }
-- (void)chooseTypeAlertViewWillDisappear:(XYChooseTypeAlertView *)alertView
+ (void)chooseTypeAlertViewWillDisappear:(XYChooseTypeAlertView *)alertView
 {
     NSLog(@"消失调用");
 }
