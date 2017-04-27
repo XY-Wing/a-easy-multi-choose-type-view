@@ -10,9 +10,8 @@
     //3.显示
     [alertV showChooseTypeView];
 ---
-
+- delegate
 ---
-#pragma mark - 代理方法
 - (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
 {
     //选择后调用
