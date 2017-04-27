@@ -10,8 +10,8 @@
     //3.显示
     [alertV showChooseTypeView];
 ```
-<br>
-### delegate
+
+### <a></a>delegate
 ```objc 
 - (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
 {
