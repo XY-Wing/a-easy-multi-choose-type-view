@@ -10,5 +10,18 @@
     //3.显示
     [alertV showChooseTypeView];
 ---
+
+---
+#pragma mark - 代理方法
+- (void)chooseTypeAlertView:(XYChooseTypeAlertView *)alertView didSelectedIndex:(NSInteger)index
+{
+    //选择后调用
+    NSLog(@"index = %zd",index);
+}
+- (void)chooseTypeAlertViewWillDisappear:(XYChooseTypeAlertView *)alertView
+{
+    NSLog(@"消失调用");
+}
+---
 ![image](https://github.com/XY-Wing/a-easy-multi-choose-type-view/blob/master/EasyTypeChooseView-master/GIF/%E7%B1%BB%E5%9E%8B%E9%80%89%E6%8B%A9%E6%A1%86.gif)
 
